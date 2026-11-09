@@ -18,12 +18,8 @@ export class CafeListComponent implements OnInit {
   ngOnInit(): void {
     this.cafeService.getCafes().subscribe((cafes) => {
       this.cafes = cafes;
-      this.actualizarConteos();
+      this.blendCount = cafes.filter((c) => c.tipo === 'Blend').length;
+      this.origenCount = cafes.filter((c) => c.tipo === 'Café de Origen').length;
     });
-  }
-
-  private actualizarConteos(): void {
-    this.blendCount = this.cafes.filter((c) => c.tipo === 'Blend').length;
-    this.origenCount = this.cafes.filter((c) => c.tipo === 'Café de Origen').length;
   }
 }
