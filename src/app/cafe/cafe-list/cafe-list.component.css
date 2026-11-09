@@ -1,0 +1,65 @@
+.cafe-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 3rem;
+  background-color: #fff;
+}
+
+.cafe-list__title {
+  font-family: 'Inder', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #000;
+  margin: 0 0 0.75rem;
+}
+
+.cafe-list__rule {
+  margin: 0 0 1.25rem;
+  border: 0;
+  border-top: 1px solid #c8c8c8;
+  opacity: 1;
+}
+
+.cafe-list__banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.cafe-list__table {
+  --bs-table-bg: #fff;
+  --bs-table-color: #333;
+  table-layout: fixed;
+  width: 72%;
+  border-collapse: collapse;
+}
+
+.cafe-list__table thead th {
+  background-color: #5a6269;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  padding: 0.65rem 1rem;
+  vertical-align: middle;
+}
+
+.cafe-list__table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cafe-list__table tbody td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+.cafe-list__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.cafe-list__index {
+  font-weight: 700;
+  width: 3rem;
+}

@@ -1,0 +1,27 @@
+<div class="cafe-list">
+  <h1 class="cafe-list__title">El aroma mágico</h1>
+  <hr class="cafe-list__rule" />
+
+  <img class="cafe-list__banner img-fluid" src="/banner-cafe.jpg" alt="Café en grano" />
+
+  <table class="table cafe-list__table mt-4 mb-0">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Región</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (cafe of cafes; track cafe.id; let i = $index) {
+        <tr>
+          <td class="cafe-list__index">{{ i + 1 }}</td>
+          <td>{{ cafe.nombre }}</td>
+          <td>{{ cafe.tipo }}</td>
+          <td>{{ cafe.region }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
