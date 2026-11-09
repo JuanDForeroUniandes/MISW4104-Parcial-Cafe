@@ -63,3 +63,9 @@
   font-weight: 700;
   width: 3rem;
 }
+
+.cafe-list__summary {
+  width: 72%;
+  color: #333;
+  font-size: 1rem;
+}
